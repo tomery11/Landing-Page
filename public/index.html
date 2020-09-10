@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Treepodia (Tomer Yona)</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--video style sheet-->
+    <link rel="stylesheet" href="css/fixed.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <!--for sending emails-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div class="video-background">
+      <div class="video-wrap">
+        <div id="video">
+          <video id="bgvid" autoplay loop muted playsinline>
+            <source src="media/Top Page Video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="caption text-center">
+      <h1>Create video ads in Google in a few clicks</h1>
+      <h3>Benefit the power of AI to create powerful video ads</h3>
+    </div>
+
+    <section>
+      <div class="container">
+        <!--row 1-->
+        <div class="row gap100">
+          <div class="col-md-6 my-auto">
+            <h5>
+              If you use Google Ads today, most likely you allocate at least 80%
+              of you budget in Search and Shopping ads.
+            </h5>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="media/Image One.png"
+              class="img-fluid"
+              alt="google search"
+            />
+          </div>
+        </div>
+
+        <!--row 2-->
+        <div class="row gap100">
+          <div class="col-md-6 ">
+            <img
+              src="media/Image Two.jpg"
+              class="img-fluid"
+              alt="google search"
+            />
+          </div>
+          <div class="col-md-6 my-auto">
+            <h5>
+              Google Display Network seems trickier. It requires content
+              creation, bidding and targeting.
+            </h5>
+          </div>
+        </div>
+
+        <!--row 3-->
+        <div class="row gap100">
+          <div class="col-md-6 my-auto">
+            <h5>
+              With SLEVA you can create hundreds of videos ads, and use them in
+              Google Smart Display campaign in a few clicks. You will gain a
+              unique combination of branding, website traffic and ROAS – better
+              than most of your existing campaigns.
+            </h5>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="media/Image Three.jpg"
+              class="img-fluid"
+              alt="google search"
+            />
+          </div>
+        </div>
+
+        <!--row 4-->
+        <div class="row gap100">
+          <div class="col-md-6 ">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="media/Illustration Video.mp4"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 my-auto">
+            <h5>
+              See a short illustration of the system
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--form to contact-->
+    <div class="container">
+        <h1 class="brand">Contact us today to try it:</h1>
+        <div class="wrapper">
+          <div class="company-info">
+            <h3>Treepodia</h3>
+            <ul>
+              <li><i class="fa fa-road"></i> 44 Something st</li>
+              <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+              <li><i class="fa fa-envelope"></i> test@treepodia.test</li>
+            </ul>
+          </div>
+      <div class="contact">
+        <form class="p-3" id="contactForm">
+          <div class="form-group">
+            <label for="name">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first_name"
+              placeholder="John"
+              required
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Family Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="family_name"
+              placeholder="Doe"
+              required
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Company</label>
+            <input
+              type="text"
+              class="form-control"
+              id="company"
+              placeholder="Google"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Website</label>
+            <input
+              type="text"
+              class="form-control"
+              id="website"
+              placeholder="www.google.com"
+              required
+              
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="seeAnotherFieldGroup">Industry</label>
+            <select class="form-control" id="seeAnotherFieldGroup" required>
+              <option value="Choose">Choose</option>
+              <option value="Retail">Retail</option>
+              <option value="Travel">Travel</option>
+              <option value="Services">Services</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="otherFieldGroupDiv">
+            <div class="row">
+              <div class="col-6">
+                <label for="otherField1">Type industry</label>
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  id="otherField1"
+                  placeholder="AI"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="johndoe@gmail.com"
+              required
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Phone Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="054555555"
+            />
+          </div>
+          <p class="full">
+            <button type="submit">I want to learn more</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+
+
+
+    <script src="script.js"></script>
+    
+
+    
+
+
+    
+  </body>
+</html>

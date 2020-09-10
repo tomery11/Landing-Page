@@ -1,0 +1,24 @@
+.video-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  color: white;
+}
+
+.caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem, 0.1rem, 0.8rem;
+}
+
+.gap100 {
+  padding: 70px 0px;
+}
